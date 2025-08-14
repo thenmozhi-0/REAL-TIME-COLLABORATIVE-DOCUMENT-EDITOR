@@ -1,0 +1,32 @@
+* { box-sizing: border-box; }
+html, body, #root { height: 100%; margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Arial, sans-serif; }
+
+.container {
+  max-width: 720px;
+  margin: 48px auto;
+  padding: 0 16px;
+}
+
+h1 { margin: 0 0 8px; }
+.muted { color: #666; margin-bottom: 24px; }
+
+.card { display: grid; gap: 8px; padding: 16px; border: 1px solid #eee; border-radius: 12px; }
+.card input { padding: 10px 12px; border-radius: 8px; border: 1px solid #ddd; }
+.card button { padding: 10px 14px; border-radius: 10px; border: 0; background: black; color: white; cursor: pointer; }
+.card button:hover { opacity: .9; }
+
+.info { margin-top: 16px; color: #444; }
+
+.editor-wrap { height: 100vh; display: flex; flex-direction: column; }
+.editor-bar {
+  display: flex; gap: 12px; align-items: center;
+  padding: 10px 12px; border-bottom: 1px solid #eee;
+}
+.editor-bar .title {
+  flex: 1; font-size: 18px; padding: 8px 10px;
+  border-radius: 8px; border: 1px solid #ddd;
+}
+.editor-bar .status { color: #666; font-size: 14px; }
+
+.ql-container { flex: 1; }
+.ql-editor { min-height: calc(100vh - 140px); }
